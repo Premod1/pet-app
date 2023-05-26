@@ -26,6 +26,15 @@ const routes = [
     component: function () {
       return import( '../views/AdminDashboard.vue') 
     },
+    children: [
+      {
+        path: '/dashboard/add-item',
+        name: 'add-item',
+        component: function () {
+          return import('../views/AddItem.vue')
+        }
+      }
+    ]
    
   },
   {
