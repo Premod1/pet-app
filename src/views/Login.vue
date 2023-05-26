@@ -8,6 +8,7 @@ const store = useStore();
 
 const login = () => {
     store.dispatch('login', login_form.value)
+    
 }
 
 </script>

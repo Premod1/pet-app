@@ -9,7 +9,7 @@ import { collection , doc , addDoc , setDoc } from 'firebase/firestore'
 const email = ref('')
 
 async function handleSub() {
-  console.log("done");
+  
 
   const userEmail = {
     email: email.value,
@@ -20,8 +20,11 @@ async function handleSub() {
         
     const docRef = await addDoc(collection(db,'subs'),userEmail)
     console.log('Email added successfully with ID: ', docRef.id);
+    alert('Success Subscribe')
+    
   } catch (error) {
     console.error('Error adding email: ', error);
+    alert('Error adding email: ', error);
   }
 }
   
