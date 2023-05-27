@@ -1,11 +1,34 @@
 <script setup>
-import { useRouter } from 'vue-router';
+import { onMounted } from "vue";
+
+import { collection, query, where, getDocs } from "firebase/firestore";
+import { db } from '../firebase/index'
+import { useRouter } from "vue-router";
+
+
 const router = useRouter();
+
 function Additem() {
-    
-    router.push('/dashboard/add-item')
+  router.push("/dashboard/add-item");
 }
+
+async function getData() {
+
+  const q = query(collection(db, "subs"));
+
+const querySnapshot = await getDocs(q);
+querySnapshot.forEach((doc) => {
+  // doc.data() is never undefined for query doc snapshots
+  console.log(doc.id, " => ", doc.data());
+});
+
+}
+
+onMounted(() => {
+  getData();
+});
 </script>
+
 
 <template>
   <div>
@@ -24,9 +47,8 @@ function Additem() {
         >
           Add Item
         </button>
-        
       </div>
     </div>
-    <RouterView/>
+    <RouterView />
   </div>
 </template>
