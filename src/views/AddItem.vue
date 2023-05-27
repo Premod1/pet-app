@@ -28,6 +28,9 @@ async function handleAdd() {
     };
     const docRef = await addDoc(collection(db, 'items'), newItemData);
     console.log('added successfully', docRef);
+    userData.itemName = " ";
+    userData.itemPrice = " ";
+    userData.file = " ";
   } catch (error) {
     console.log('error', error);
   }
