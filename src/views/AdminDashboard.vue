@@ -4,6 +4,7 @@ import { onMounted } from "vue";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import { db } from '../firebase/index'
 import { useRouter } from "vue-router";
+import { async } from "@firebase/util";
 
 
 const router = useRouter();
@@ -24,8 +25,19 @@ querySnapshot.forEach((doc) => {
 
 }
 
+async function getItem() {
+  const q = query(collection(db, "items"));
+
+const querySnapshot = await getDocs(q);
+querySnapshot.forEach((doc) => {
+  // doc.data() is never undefined for query doc snapshots
+  console.log(doc.id, " => ", doc.data());
+});
+}
+
 onMounted(() => {
   getData();
+  getItem();
 });
 </script>
 

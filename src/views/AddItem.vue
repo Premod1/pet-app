@@ -1,5 +1,6 @@
 <script setup>
 import { NInput } from "naive-ui";
+import { useRouter } from "vue-router";
 import {  reactive } from "vue";
 import { db } from "../firebase/index";
 import {
@@ -17,6 +18,8 @@ const userData = reactive({
   file: "",
 });
 
+const router = useRouter();
+
 async function handleAdd() {
   console.log(userData);
   try {
@@ -28,9 +31,8 @@ async function handleAdd() {
     };
     const docRef = await addDoc(collection(db, 'items'), newItemData);
     console.log('added successfully', docRef);
-    userData.itemName = " ";
-    userData.itemPrice = " ";
-    userData.file = " ";
+    router.push('/dashboard')
+
   } catch (error) {
     console.log('error', error);
   }
