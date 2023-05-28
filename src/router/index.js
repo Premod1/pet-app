@@ -28,6 +28,13 @@ const routes = [
     },
     children: [
       {
+        path:'',
+        name: 'table',
+        component: function () {
+          return import('../views/Tables.vue');
+        }
+      },
+      {
         path: '/dashboard/add-item',
         name: 'add-item',
         component: function () {

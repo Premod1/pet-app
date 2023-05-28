@@ -1,4 +1,5 @@
 <script setup>
+import { defineEmits } from "vue";
 import { NInput } from "naive-ui";
 import { useRouter } from "vue-router";
 import {  reactive } from "vue";
@@ -32,6 +33,8 @@ async function handleAdd() {
     const docRef = await addDoc(collection(db, 'items'), newItemData);
     console.log('added successfully', docRef);
     router.push('/dashboard')
+
+
 
   } catch (error) {
     console.log('error', error);
