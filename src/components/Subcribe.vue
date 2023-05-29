@@ -21,6 +21,7 @@ async function handleSub() {
     const docRef = await addDoc(collection(db,'subs'),userEmail)
     console.log('Email added successfully with ID: ', docRef.id);
     alert('Success Subscribe')
+    email.value = ""
     
   } catch (error) {
     console.error('Error adding email: ', error);
@@ -37,7 +38,7 @@ async function handleSub() {
         <div>
             <h2 class="p-8 text-3xl font-black text-white">Do not miss out on personalised offers, discounts and coupons!</h2>
             <div class="flex justify-center gap-7">
-                <input type="text"  class="w-[550px] h-10 rounded-none" v-model="email"/>
+                <input type="text"  class="w-[550px] h-10 rounded-none text-xl pl-5 border-none" v-model="email"/>
                 <button class="w-[200px] bg-white font-black text-xl rounded-md hover:bg-slate-200" @click="handleSub">Subcribe</button>
                 
             </div>

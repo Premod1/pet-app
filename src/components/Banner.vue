@@ -1,6 +1,7 @@
 <!-- <script setup>
 import BannerImage from "../assets/Banner.png";
 
+
 </script>
 <template>
     <div class="">
@@ -8,33 +9,35 @@ import BannerImage from "../assets/Banner.png";
     </div>
 </template> -->
 
-<script setup></script>
+<script setup>
+import Banner1 from "../assets/Banner1.jpg";
+import Banner2 from "../assets/Banner2.jpg";
+import Banner3 from "../assets/Banner3.jpg";
+import BannerImage from "../assets/Banner.png";
+
+</script>
 
 <template>
   <n-carousel show-arrow>
     <img
-      class="w-full md:h-[440px] h-[240px] object-cover"
-      src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel1.jpeg"
+      class="w-full md:h-[440px] h-[540px] object-cover"
+      :src="Banner3"
     />
     <img
       class="w-full md:h-[440px] h-[240px] object-cover"
-      src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel2.jpeg"
+      :src="Banner2"
     />
     <img
       class="w-full md:h-[440px] h-[240px] object-cover"
-      src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel3.jpeg"
+      :src="Banner1"
     />
     <img
       class="w-full md:h-[440px] h-[240px] object-cover"
-      src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel4.jpeg"
+      :src="BannerImage"
     />
   </n-carousel>
 </template>
 
 <style scoped>
-/* .carousel-img {
-    width: 100%;
-    height: 540px;
-    object-fit: cover;
-  } */
+
 </style>
