@@ -65,13 +65,13 @@ onMounted(async () => {
 </script>
 <template>
   <div>
-    <div class="flex">
-      <div class="flex-none w-[550px] ml-20 mr-20">
+    <div class=" flex-col-1 md:flex">
+      <div class="flex-none w-[550px] ml-2 md:ml-20 mr-20">
         <h1 class="flex justify-center pb-10 text-2xl font-black">
           Our subscribes....
         </h1>
 
-        <div class="w-[550px]">
+        <div class="w-96 ml-2 md:w-[550px]">
           <table>
             <thead>
               <tr>

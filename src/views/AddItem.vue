@@ -62,7 +62,7 @@ function handleFileChange(event) {
 <template>
   <div class="flex flex-col items-center justify-center gap-10">
     <h1 class="text-2xl font-black">Add Item</h1>
-    <div class="bg-slate-300 w-[500px] h-[400px] p-10">
+    <div class="bg-slate-300 w-80 md:w-[500px] h-[400px] p-10">
       <h2>Enter Item Name</h2>
       <n-input
         size="large"

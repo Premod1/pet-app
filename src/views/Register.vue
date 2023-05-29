@@ -23,13 +23,13 @@ const register = () => {
         type="email"
         placeholder="Enter email"
         v-model="register_form.email"
-        class="w-[320px] md:w-[550px] h-12 text-base tracking-wide"
+        class="w-[320px] md:w-[550px] h-12 text-xl pl-5 border-none tracking-wide"
       />
       <input
         type="password"
         placeholder="password"
         v-model="register_form.password"
-        class="w-[320px] md:w-[550px] h-12 text-base"
+        class="w-[320px] md:w-[550px] h-12  text-xl pl-5 border-none"
       />
       <button
         class="text-lg font-black text-white bg-green-900 cursor-pointer w-36 h-11 hover:bg-green-800"

@@ -23,7 +23,7 @@ function Additem() {
 <template>
   <div>
     <div class="flex items-center justify-between bg-slate-400">
-      <h1 class="pl-6 text-3xl font-black">Admin Dashboard</h1>
+      <h1 class="pl-6 text-base font-black md:text-3xl">Admin Dashboard</h1>
       <div class="flex gap-6 p-7">
         <button
           class="w-20 h-10 font-black text-white bg-red-500 rounded-lg hover:bg-red-600"

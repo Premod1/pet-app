@@ -1,4 +1,8 @@
 <script setup>
+
+function openwhatsapp() {
+  window.open('https://web.whatsapp.com/', '+94764686371')
+}
 </script>
 <template>
     <div class="relative z-0 gray-border">
@@ -29,7 +33,11 @@
           <div class="pb-[15px]">Contact Us</div>
         </div>
       </div>
-      
+      <div class="flex justify-center p-1">
+      <button class="w-40 h-10 font-black text-white bg-green-600 rounded-full" @click="openwhatsapp">Whatsapp</button>
     </div>
+    </div>
+   
+   
     </div>
 </template>

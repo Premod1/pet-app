@@ -27,7 +27,7 @@ onMounted(async () => {
 
 </script>
 <template>
-    <div class="grid grid-cols-5 gap-4 p-5">
+    <div class="grid gap-4 p-5 grid-col-1 md:grid-cols-5">
       <div v-for="(item, k) in Items" :key="k">
         <img
           :src="item.data.file" class="object-fill w-64 h-64"

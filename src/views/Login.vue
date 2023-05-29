@@ -24,13 +24,13 @@ const login = () => {
         type="email"
         v-model="login_form.email"
         placeholder="Enter email"
-        class="w-[320px] md:w-[550px] h-12"
+        class="w-[320px] md:w-[550px] h-12 text-xl pl-5 border-none"
       />
       <input
         type="password"
         placeholder="password"
         v-model="login_form.password"
-        class="w-[320px] md:w-[550px] h-12"
+        class="w-[320px] md:w-[550px] h-12 text-xl pl-5 border-none"
       />
       <button
         class="text-lg font-black text-white bg-green-900 cursor-pointer w-36 h-11 hover:bg-green-800"
