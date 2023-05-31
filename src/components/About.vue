@@ -1,20 +1,20 @@
 <script setup></script>
 <template>
-  <div class="grid grid-flow-col grid-cols-2 gap-4">
+  <div class="grid grid-rows-1 gap-4 md:grid-cols-2">
     <div>
       <img
         src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
         alt=""
-        class="p-10"
+        class="p-10 w-96 md:w-[750px]"
       />
     </div>
     <div>
-      <h2 class="pt-20 pr-10 text-lg text-center">
+      <h2 class="pt-5 pr-1 text-sm text-center md:pt-20 md:pr-10 md:text-lg">
         Welcome to Jack Pet Supplies and Sherlock Rescue! We are a unique retail
         store that offers a wide range of high-quality pet products and
         services, as well as support for the local animal rescue community.
       </h2>
-      <p class="pt-20 w-[650px] text-lg leading-10">
+      <p class=" pt-5 md:pt-20 w-80 md:w-[650px] text-sm md:text-lg leading-10 p-3 md:p-0">
         Our store is run by a team of passionate and knowledgeable pet lovers
         who are dedicated to providing exceptional customer service and expert
         advice on all things related to pet care. We take pride in offering a

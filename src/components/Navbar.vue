@@ -13,9 +13,9 @@ function handleShop() {
 </script>
 <template>
     <div class="flex items-center justify-between p-4 pt-10 pb-10 bg-white">
-        <h1 class="pl-4 text-xl font-black md:text-4xl">Jack Pet</h1>
-        <div class="flex gap-20">
-            <h2 @click="handleShop" class="cursor-pointer  hover:bg-green-500">Shop</h2>
+        <h1 class="pl-4 text-base font-black md:text-4xl">Jack Pet</h1>
+        <div class="flex gap-5 md:gap-20">
+            <h2 @click="handleShop" class="cursor-pointer hover:bg-green-500">Shop</h2>
             <h2>About</h2>
             <h2>Contact</h2>
         </div>
