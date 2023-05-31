@@ -31,6 +31,7 @@ function Additem() {
         >
           Log Out
         </button>
+        <button  class="h-10 font-black text-white bg-blue-800 rounded-lg w-28 hover:bg-blue-950"><a href="/register">Register Here</a></button>
         <button
           class="w-20 h-10 font-black text-white bg-blue-800 rounded-lg hover:bg-blue-950"
           @click="Additem"

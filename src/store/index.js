@@ -23,6 +23,13 @@ export default createStore({
 
       try {
         await signInWithEmailAndPassword(auth, email, password)
+        if (auth.currentUser.email === 'admin@admin.com' && auth.currentUser.password === '123456789') {
+          router.push('/dashboard')
+          commit('SET_USER', { user: auth.currentUser, role: 'admin' });
+        } else {
+          router.push('/dashboard')
+          commit('SET_USER', { user: auth.currentUser, role: 'client' });
+        }
       } catch (error) {
         switch(error.code) {
           case 'auth/user_not_found':
@@ -37,8 +44,9 @@ export default createStore({
         return
       }
       commit('SET_USER', auth.currentUser)
-      router.push('/dashboard')
+     
     },
+    // router.push('/dashboard')
 
     async register ({commit}, details) {
       const { email, password } = details

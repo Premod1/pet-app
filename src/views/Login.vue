@@ -3,7 +3,6 @@ import { useStore } from "vuex";
 import { ref } from "vue";
 
 const login_form = ref({});
-const register_form = ref({});
 const store = useStore();
 
 const login = () => {
@@ -38,7 +37,7 @@ const login = () => {
       >
         Login
       </button>
-      <h1>need an account? <a href="/register">Register Here</a></h1>
+      
     </div>
   </div>
 </template>

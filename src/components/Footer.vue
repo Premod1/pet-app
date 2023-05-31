@@ -7,7 +7,7 @@ function openwhatsapp() {
 <template>
     <div class="relative z-0 gray-border">
         <div class="max-w-[1000px] text-[#737373] py-[70px] px-5 md:px-[45px] w-[90%] mx-auto">
-      <h2 class="pb-5">Questions? Contact Us</h2>
+      <h2 class="pb-5">Contact Us</h2>
       <div class="grid grid-cols-2 md:grid-cols-4 text-[12px] md:text-[13px]">
         <div>
           <div class="pb-[15px]">FAQ</div>

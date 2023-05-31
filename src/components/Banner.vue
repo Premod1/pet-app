@@ -20,19 +20,19 @@ import BannerImage from "../assets/Banner.png";
 <template>
   <n-carousel show-arrow>
     <img
-      class="w-full md:h-[440px] h-[540px] object-cover"
+      class="w-full md:h-[740px] h-[540px] object-cover"
       :src="Banner3"
     />
     <img
-      class="w-full md:h-[440px] h-[240px] object-cover"
+      class="w-full md:h-[740px] h-[240px] object-cover"
       :src="Banner2"
     />
     <img
-      class="w-full md:h-[440px] h-[240px] object-cover"
+      class="w-full md:h-[740px] h-[240px] object-cover"
       :src="Banner1"
     />
     <img
-      class="w-full md:h-[440px] h-[240px] object-cover"
+      class="w-full md:h-[740px] h-[240px] object-cover"
       :src="BannerImage"
     />
   </n-carousel>

@@ -20,7 +20,7 @@ async function handleSub() {
         
     const docRef = await addDoc(collection(db,'subs'),userEmail)
     console.log('Email added successfully with ID: ', docRef.id);
-    alert('Success Subscribe')
+    alert('You are earn To 20% Offers Coupons')
     email.value = ""
     
   } catch (error) {
