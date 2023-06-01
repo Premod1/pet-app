@@ -10,10 +10,18 @@ import About from "@/components/About.vue";
   <div >
     <Navbar />
     <Banner />
-    <Product/>
-    <About/>
+    <div id="productList">
+      <Product/>
+    </div>
+    <div id="about">
+      <About/>
+    </div>
+    
     <Subcribe />
-    <Footer />
+    <div id="contact">
+      <Footer />
+    </div>
+    
     
   </div>
 </template>
